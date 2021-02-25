@@ -25,7 +25,7 @@ jobs:
       working-directory: ./DotnetTemplate.Web
     - run: npm t
       working-directory: ./DotnetTemplate.Web
-    - run: npm run lint
+    - run: npm run lin
       working-directory: ./DotnetTemplate.Web
     - uses: 8398a7/action-slack@v3
       with:
