@@ -23,5 +23,5 @@ jobs:
       working-directory: ./DotNetTemplate.Web
     - run: npm run build
       working-directory: ./DotNetTemplate.Web
-      - run: npm t
+    - run: npm t
       working-directory: ./DotNetTemplate.Web
