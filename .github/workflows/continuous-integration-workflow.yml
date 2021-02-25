@@ -27,3 +27,9 @@ jobs:
       working-directory: ./DotnetTemplate.Web
     - run: npm run lint
       working-directory: ./DotnetTemplate.Web
+    - name: Slack Notification
+      uses: rtCamp/action-slack-notify@v2
+      env:
+        SLACK_TITLE: Post Title
+        SLACK_USERNAME: Ian.Martin3
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
