@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        dotnet-version: [ '5.0.3' ]
+        dotnet-version: [ '3.1.x' ]
 
     steps:
     - uses: actions/checkout@v2
     - uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '5.0.x' 
+        dotnet-version: '3.1.x' # SDK Version to use; x will use the latest version of the 3.1 channel
     - run: dotnet build
     - run: dotnet test 
